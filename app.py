@@ -122,7 +122,8 @@ def transcreve_tab_audio():
 
 def api_key():
     st.text_input('Digite sua chave da API OpenAI:', key='api_key', type='password')
-    st.write("Chave salva no session state.")
+    if st.session_state['api_key']:
+        st.success('Chave salva com sucesso')
 
 # MAIN =====================================
 def main():
