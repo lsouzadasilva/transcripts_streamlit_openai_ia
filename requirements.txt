@@ -2,6 +2,6 @@ ipykernel
 openai
 streamlit
 streamlit_webrtc
-moviepy
+moviepy==1.0.3
 pydub
-imageio[ffmpeg]
+imageio[ffmpeg]==2.9.0
