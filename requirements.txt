@@ -1,8 +1,7 @@
 ipykernel
 openai
-streamlit==1.33.0
+streamlit
 streamlit_webrtc
 moviepy
 pydub
-imageio[ffmpeg]
-
+imageio
