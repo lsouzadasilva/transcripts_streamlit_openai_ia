@@ -17,6 +17,17 @@ ARQUIVO_MIC_TEMP = PASTA_TEMP / 'mic.mp3'
 
 if 'api_key' not in st.session_state:
     st.session_state['api_key'] = ''
+    
+
+# --- Ocult menus ---
+hide_st_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            header {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_st_style, unsafe_allow_html=True)
+
 
 def transcreve_audio(caminho_audio, prompt):
     if not st.session_state['api_key']:
