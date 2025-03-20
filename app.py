@@ -138,7 +138,11 @@ def api_key():
 
 # MAIN =====================================
 def main():
-    st.header('Bem-vindo ao J.A.R.V.I.S Transcript🎤', divider=True)
+    st.header('Bem-vindo ao J.A.R.V.I.S Transcript🎤')
+    st.markdown("""
+    **Desenvolvido por Leandro Souza**  
+    [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/leandro-souza-bi/)
+    """)
     st.markdown('#### Transcreva áudio do microfone, de vídeos e de arquivos de áudio')
     tab_mic, tab_video, tab_audio, tab_key = st.tabs(['Microfone', 'Vídeo', 'Áudio', 'Configurações'])
     with tab_mic:
